@@ -1,0 +1,361 @@
+.laugh-and-practice .videos {
+    /* padding: 20px 0; */
+    /* padding: 0 0 40px 0; */
+    /* max-width: 560px; */
+    margin: 20px auto;
+}
+
+.laugh-and-practice .filters a {
+    display: inline-block;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .75px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.laugh-and-practice .filters a span {
+    margin-right: 3px;
+}
+
+.laugh-and-practice .filters a.active {
+    background: #198eff;
+}
+
+.laugh-and-practice .filters a:hover {
+    background: #198eff;
+}
+
+.laugh-and-practice .video {
+    /* background-color: #e8e8e8; */
+    /* padding: 15px 0; */
+}
+
+.laugh-and-practice .video iframe {
+    border-radius: 0.5rem;
+}
+
+.laugh-and-practice .videos {
+    display: grid;
+    grid-gap: 40px;
+    /* grid-auto-flow: dense; */
+    grid-template-columns: repeat(3, 1fr);
+    margin: 25px 0;
+}
+
+.laugh-and-practice .video {
+    /* background: rgba(0, 0, 0, 0.4) url(/vid.jpg); */
+    background-color: #0a142a;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    /* padding: 4px; */
+    border-radius: 0.5rem;
+    /* background-color: #e8e8e8; */
+    height: 215px;
+    /* background-size: cover;
+    background-position: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #198eff;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    padding: 20px;
+    text-align: center;
+}
+
+.laugh-and-practice .video h5 span {
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+/* 
+.laugh-and-practice .video:hover {
+    transform: scale(1.05);
+} */
+
+.laugh-and-practice .video iframe {
+    max-width: 100%;
+}
+
+.laugh-and-practice .details {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    position: relative;
+}
+
+.laugh-and-practice .details .watch-original {
+    color: #198eff;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    border-bottom: 1px solid;
+    width: auto;
+    /* margin-bottom: 10px; */
+    cursor: pointer;
+    /* transition: all .2s ease-in-out; */
+}
+
+.laugh-and-practice .details h5 {
+    font-size: 10px;
+    color: #198eff;
+    text-transform: uppercase;
+}
+
+.laugh-and-practice .details h5 span {
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.laugh-and-practice .details h3 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    /* margin: 15px 0 20px 0; */
+    /* font-weight: 600; */
+}
+
+.laugh-and-practice .details h3 span {
+    margin-right: 5px;
+}
+
+.laugh-and-practice .details p {
+    color: #000;
+    font-weight: 500;
+    font-size: 10px;
+    margin: 0 0 25px 0;
+    opacity: 0.6
+}
+
+.laugh-and-practice .details .start {
+    display: block;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100px;
+}
+
+.laugh-and-practice .video:hover .start {
+    opacity: 1;
+}
+
+.laugh-and-practice .watch-original:hover {
+    color: #198eff
+}
+
+.laugh-and-practice .start:hover button {
+    opacity: 1
+}
+
+.laugh-and-practice .details button {
+    background: none;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    min-width: 100px;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.75; */
+}
+
+.laugh-and-practice .details button img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+.laugh-and-practice .levels {
+    flex: 1;
+    display: flex;
+    /* justify-content: space-between; */
+    padding-right: 20px;
+    gap: 5px;
+}
+
+.laugh-and-practice .level {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    display: flex;
+    border-radius: 100px;
+    padding: 10px;
+    /* cursor: pointer; */
+}
+
+/* .laugh-and-practice .level.active,
+.laugh-and-practice .level:hover {
+    background: rgba(0, 0, 0, 0.1);
+} */
+
+.laugh-and-practice .level img {
+    width: 20px;
+    height: 20px;
+}
+
+.laugh-and-practice button {
+    cursor: pointer;
+}
+
+.total-videos {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 20px;
+    letter-spacing: 1px;
+    color: #198eff;
+}
+
+@media (max-width: 800px) {
+    .laugh-and-practice .videos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .laugh-and-practice .filters a {
+        font-size: 10px;
+    }
+
+    .laugh-and-practice .videos .video {
+        height: 300px;
+    }
+
+    .laugh-and-practice .details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .laugh-and-practice .levels {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .laugh-and-practice .level {
+        font-size: 10px;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .laugh-and-practice .details button {
+        width: 100%;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    max-width: 240px;
+    margin: auto;
+}
+
+.pagination-value .em {
+    margin-bottom: 2px;
+    margin-right: 3px;
+}
+
+.prev-week {
+    padding: 15px 25px 15px 45px;
+    /* background: #198eff; */
+}
+
+.prev-week,
+.next-week {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 100px;
+}
+
+.pagination-label {
+    font-size: 10px;
+    color: #198eff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.pagination svg {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.pagination svg path {
+    fill: #fff
+}
+
+.prev-week svg {
+    transform: rotateY(180deg);
+    /* margin-right: 5px; */
+}
+
+.next-week svg {
+    /* margin-left: 5px; */
+}
+
+.pagination-value {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.this-week {
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 0.5rem;
+}
+
+.next-week {
+    cursor: pointer;
+    position: relative;
+    padding: 15px 45px 15px 25px;
+    /* border-radius: 0.5rem; */
+}
+
+.next-week.disabled {
+    /* cursor: default; */
+    background: none !important;
+    opacity: 0.25;
+}
+
+/* .next-week svg {
+    right: 15px
+}
+
+.prev-week svg {
+    left: 15px
+} */
+
+.prev-week:hover,
+.this-week:hover,
+.next-week:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
